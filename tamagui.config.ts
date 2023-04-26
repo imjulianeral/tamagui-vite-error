@@ -1,10 +1,12 @@
-import { shorthands } from '@tamagui/shorthands'
-import { themes, tokens } from '@tamagui/themes'
+import { config } from '@tamagui/config'
 import { createTamagui } from 'tamagui'
 
-export default createTamagui({
-  themes,
-  tokens,
-  shorthands,
-  fonts: {},
-})
+const appConfig = createTamagui(config)
+
+export type AppConfig = typeof appConfig
+
+declare module 'tamagui' {
+  type TamaguiCustomConfig = AppConfig
+}
+
+export default appConfig
