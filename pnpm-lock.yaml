@@ -1,6 +1,12 @@
 lockfileVersion: '6.0'
 
 dependencies:
+  '@tamagui/shorthands':
+    specifier: ^1.16.5
+    version: 1.16.5
+  '@tamagui/themes':
+    specifier: ^1.16.5
+    version: 1.16.5(react@18.2.0)
   react:
     specifier: ^18.2.0
     version: 18.2.0
@@ -2188,6 +2194,10 @@ packages:
       react: 18.2.0
     dev: false
 
+  /@tamagui/colors@1.16.5:
+    resolution: {integrity: sha512-chLsBkvlAsmqQNV48YL1L9mzB+aPuznX84P8/BiytHPKJaMpB0NtuF/tIm5nf5AMdPaPVqFs5AvCwO0ZPZLz9w==}
+    dev: false
+
   /@tamagui/compose-refs@1.16.5(react@18.2.0):
     resolution: {integrity: sha512-Hx94FeXBWWUV/LEoyj2rKmx2Yoxn0BS5Es/Am8+9uJ2DMGyxzRj7cxGYsKCQv5DSrEn8ULPSYOZ/BEePM+j3zg==}
     peerDependencies:
@@ -2222,6 +2232,14 @@ packages:
       react: '*'
     dependencies:
       react: 18.2.0
+    dev: false
+
+  /@tamagui/create-theme@1.16.5(react@18.2.0):
+    resolution: {integrity: sha512-5/6mJ1gKLzX2irHN33NJ9WVS5TDpVD5j5Zh+cX67sSN5nagMbYyRu7e9cC9a/aXHS/zdziW2Na8ckoLXoEIGPg==}
+    dependencies:
+      '@tamagui/web': 1.16.5(react@18.2.0)
+    transitivePeerDependencies:
+      - react
     dev: false
 
   /@tamagui/dialog@1.16.5(@types/react@18.0.28)(react-dom@18.2.0)(react-native@0.71.7)(react@18.2.0):
@@ -2691,6 +2709,10 @@ packages:
       - '@types/react'
     dev: false
 
+  /@tamagui/shorthands@1.16.5:
+    resolution: {integrity: sha512-lJ7yKdKci/07jnxzVZkqB1hJdvdc0R662EyzwTQdO+GeiRNfefVdX3jXOieJWxUxNLSZ9xDQ73M9+od6JghttA==}
+    dev: false
+
   /@tamagui/simple-hash@1.16.5:
     resolution: {integrity: sha512-ewDet0VSQ8pbTkljMKCsSHOR9klDBzhK3HRUICwAUS96prU/XMi/SHoaEloBMrm5U65SEyyfJ3wLnm7Cz4zgYA==}
     dev: false
@@ -2783,6 +2805,16 @@ packages:
       '@tamagui/constants': 1.16.5(react@18.2.0)
       '@tamagui/web': 1.16.5(react@18.2.0)
       react: 18.2.0
+    dev: false
+
+  /@tamagui/themes@1.16.5(react@18.2.0):
+    resolution: {integrity: sha512-mu7eGkZf/cDtboAQBjT+d3GqDChOamsbcMMtxzeldET5KDovXNcUCAJp1IRGSYYpyns41UcpqONDPbg+jjwSMQ==}
+    dependencies:
+      '@tamagui/colors': 1.16.5
+      '@tamagui/create-theme': 1.16.5(react@18.2.0)
+      '@tamagui/web': 1.16.5(react@18.2.0)
+    transitivePeerDependencies:
+      - react
     dev: false
 
   /@tamagui/toggle-group@1.16.5(react-native@0.71.7)(react@18.2.0):
